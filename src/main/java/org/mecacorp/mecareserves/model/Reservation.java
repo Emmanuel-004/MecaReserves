@@ -29,8 +29,8 @@ public class Reservation extends BaseModel {
     private ServiceType serviceType;
 
     @ManyToOne
-    @JoinColumn(name = "location_id")
-    private Location location;
+    @JoinColumn(name = "branch_id")
+    private Branch branch;
 
     @Column(nullable = false)
     private String licenseNumber;

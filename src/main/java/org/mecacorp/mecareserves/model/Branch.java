@@ -9,7 +9,7 @@ import org.mecacorp.mecareserves.baseclass.BaseModel;
 @Data
 @Entity
 @EqualsAndHashCode(callSuper = true)
-public class Location extends BaseModel {
+public class Branch extends BaseModel {
 
     @Column(nullable = false)
     private String name;
