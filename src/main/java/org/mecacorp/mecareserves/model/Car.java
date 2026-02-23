@@ -4,16 +4,18 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import org.mecacorp.mecareserves.baseclass.BaseModel;
 
-@Data
+@Getter
+@Setter
 @Entity
-@EqualsAndHashCode(callSuper = true)
 public class Car extends BaseModel {
 
-    @Column
+    @Column(nullable = false)
     private String brand;
 
-    @Column
+    @Column(nullable = false)
     private String type;
 }

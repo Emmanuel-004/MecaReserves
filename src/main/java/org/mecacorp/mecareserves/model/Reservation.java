@@ -6,14 +6,16 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import org.mecacorp.mecareserves.baseclass.BaseModel;
 import org.mecacorp.mecareserves.constant.ReservationStatus;
 
 import java.time.LocalDateTime;
 
-@Data
+@Getter
+@Setter
 @Entity
-@EqualsAndHashCode(callSuper = true)
 public class Reservation extends BaseModel {
 
     @ManyToOne
